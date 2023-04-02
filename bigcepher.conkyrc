@@ -1,0 +1,85 @@
+# Use Xft?
+use_xft yes
+xftfont 123:size=9
+xftalpha 0.1
+text_buffer_size 256
+
+# Update interval in seconds
+update_interval 60
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_colour 000000
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_value 0
+own_window_argb_visual yes
+background yes
+xinerama_head 1
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+#Size & Alignment
+minimum_size 500 390
+maximum_width 600
+alignment top_left
+use_spacer left
+
+#shading, outlines and colours
+draw_borders no
+draw_graph_borders no
+default_color 073e78
+draw_shades no
+default_shade_color white
+draw_outline no
+default_outline_color 000000
+stippled_borders 0
+border_margin 5
+border_width 1
+
+# Default colors and also border colors
+default_color 7cd9b7
+color0 e3e3e3
+color1 0b7a6a
+color2 0b7a6a
+
+
+# Gap between borders of screen and text
+# same thing as passing -x at command line
+gap_x 40
+gap_y 115
+
+# Subtract file system buffers from used memory?
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
+cpu_avg_samples 2
+
+# number of net samples to average
+# set to 1 to disable averaging
+net_avg_samples 2
+
+# Force UTF8? note that UTF8 support required XFT
+override_utf8_locale yes
+
+
+TEXT
+${font URW Gothic:size=16} Our Father ${font Meera New:size=15}who established salvation in the heavens, 
+           Exalted is your name. Your kingdom come. 
+               Your will be done in earth, as in the heavens. 
+Give us day by day our daily ${font DejaVu Sans:size=9} את eth-${font Meera New:size=15}bread. 
+     And forgive us our transgressions; for we also forgive those
+          that has transgressed against us. And lead us not into the evil 
+                inclination; but deliver us from the outer darkness.
+
+
