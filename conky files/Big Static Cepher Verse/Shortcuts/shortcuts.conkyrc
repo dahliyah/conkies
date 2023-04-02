@@ -1,0 +1,68 @@
+# Use Xft?
+use_xft yes
+xftfont 123:size=9
+xftalpha 0.1
+text_buffer_size 256
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_type dock
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+background yes
+xinerama_head 1
+
+## ARGB can be used for real transparency
+own_window_argb_visual yes
+## Valid range is 0-255, where 0 is 0% opacity, and 255 is 100% opacity.
+own_window_argb_value 0
+
+total_run_times 0
+double_buffer yes
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer left
+text_buffer_size 256
+temperature_unit celsius
+
+#shading, outlines and colours
+
+draw_borders no
+draw_graph_borders no
+default_color 052c56
+draw_shades no
+default_shade_color white
+draw_outline no
+default_outline_color 000000
+
+color1 052c56
+color2 dbc0c0
+color3 242424
+color4 052c56
+
+#Size & Alignment
+minimum_size 200 5
+maximum_width 330
+alignment bottom_right
+gap_x 20
+gap_y 90
+update_interval 999.0
+
+own_window_colour 000000
+TEXT
+
+${font Inconsolata:condensed:size=10}${color1}FEDORA ${color2}${hr 2}
+${color3}${font Iosevka:size=9}Terminal $alignr${color4}Super Key+T
+${color3}Close Window $alignr${color4}Alt+F4
+${color3}Show Applications $alignr${color4}Super Key+A
+${color3}Run Command $alignr${color4}Alt+F2
+${color3}Show Overview $alignr${color4}Super Key
+
+${font Inconsolata:condensed:size=10}${color1}LAUNCH ${color2}${hr 2}
+${color3}${font Iosevka:size=9}${color3}Calculator $alignr${color4}Alt+C
+${color3}Vivaldi $alignr${color4}Alt+V
+${color3}Settings $alignr${color4}Alt+S
+${color3}Open Mail $alignr${color4}Alt+M
