@@ -10,7 +10,7 @@ Shalom! Decided to share the conkies I have on my Fedora OS along with the backg
 
 # RSS Feed
 
-Add your RSS feed URLs to the rssfeed.conkyyrc in this manner:
+Add your RSS feed URLs to the rssfeed.conkyrc in this manner:
 
 
 ```
