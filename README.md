@@ -14,7 +14,7 @@ Add your RSS feed URLs to the rssfeed.conkyrc in this manner:
 
 
 ```
-${font Roboto Condensed:size=9} ${execi 300 ~/.conky/RSSFeed/rssfeed.sh **URLHERE** 2 2}
+${font Roboto Condensed:size=9} ${execi 300 ~/.conky/RSSFeed/rssfeed.sh URLHERE 2 2}
 ```
 
 
